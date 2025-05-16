@@ -1,0 +1,39 @@
+###############################################################################
+# Collaboration                                                               #
+# -------------                                                               #
+# You can collaborate with up to 3 classmates (for a total of 4 students per  #
+# group). If you do so, remember not to share code directly. Discussions are  #
+# fine, code sharing is not. Also note that all have to submit individually.  #
+#                                                                             #
+# Enter any collaborators here:                                               #
+# Collaborator 1: Saratou Agrignan                                                            #
+# Collaborator 2:                                                             #
+# Collaborator 3:                                                             #
+###############################################################################
+def fizzbuzz(start, finish):
+    '''This function will print fizz, buzz, or fizzbuzz for combinations of 3 and 5.'''
+    for num in range(start, finish + 1):
+        output = ""
+
+        # Check for multiples of 3
+        if num % 3 == 0:
+            output += "fizz"
+
+        # Check for multiples of 5
+        if num % 5 == 0:
+            output += "buzz"
+
+        # Check if the number contains 3 or 5
+        if '3' in str(num):
+            output = "fizz"
+
+        if '5' in str(num):
+            output = "buzz"
+
+        # If no conditions are met, print the number
+        if not output:
+            output = num
+
+        print(output)
+
+fizzbuzz(49,60)

@@ -1,0 +1,6 @@
+ test_permutation = contains_permutation('abcdef', 'cab')
+        test_permutation_2 = contains_permutation('patriots', 'sit')
+        variable = True 
+        variable2 = False
+        self.assertEqual(test_permutation, variable) 
+        self.assertEqual(test_permutation_2, variable2)
